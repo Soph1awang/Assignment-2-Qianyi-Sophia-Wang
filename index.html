@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Inter Font -->
+    <title>To Do List</title>
+
+    <!-- Inter Variable Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+         <section class="container">
+            <h1>To Do:</h1>
+
+            <ul class="todo-list">
+                <li>
+                    <input type="radio" name="todo">
+                    <div class="todo-text">
+                        <span class="title">Dental Appointment</span>
+                        <span class="date">2026-02-24, 2:30 PM</span>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="radio" name="todo">
+                    <div class="todo-text">
+                        <span class="title">Homework for Studio Class</span>
+                        <span class="date">2026-02-26</span>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="radio" name="todo">
+                    <div class="todo-text">
+                        <span class="title">Club Meeting on Zoom</span>
+                        <span class="date">2026-02-30, 11:00 AM</span>
+                    </div>
+                </li>
+
+                <li>
+                    <input type="radio" name="todo">
+                    <div class="todo-text">
+                        <span class="title">Clean room</span>
+                        <span class="date">2026-02-31</span>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="add-btn">+</button>
+
+             <video id="shuffleVideo" class="shuffle-video">
+                <source src="shuffle.mp4" type="video/mp4"> 
+            </video>
+
+            <div class="overlay">
+
+                <div class="overlay-box instruction">
+                    <h2>Follow the button of the item you want to check</h2>
+                    <button class="overlay-btn ready-btn">Ready</button>
+                </div>
+
+                <div class="overlay-box wrong">
+                    <h2>WRONG!</h2>
+                    <button class="overlay-btn retry-btn">Try Again</button>
+                </div>
+
+                <div class="overlay-box correct">
+                    <h2>CONGRATS!</h2>
+                    <p>Item Checked</p>
+                    <button class="overlay-btn close-btn">Close</button>
+                </div>
+         </div>
+
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* Removes default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    box-sizing: border-box;
+    background-color: #dcdcdc;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 24px;
+    padding: 40px 80px;
+    position: relative;
+}
+
+/* Heading */
+h1 {
+    color: #00bfc2;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 45px;
+}
+
+/* Radio buttons */
+.todo-list input{
+    width: 36px;
+    height: 36px;
+    accent-color: #00fbffb1;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Text */
+.todo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+}
+
+.date {
+    font-size: 20px;
+    color: #8c8c8c;
+    margin-top: 4px;
+}
+
+/* Add Button */
+.add-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00f2ffa5;
+    font-size: 60px;
+    color: #6b6b6b;
+}
+
+/* Overlay placement */
+.overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Overlay style */
+.overlay-box{
+width:420px;
+height:220px;
+background:#eaeaea;
+border-radius:16px;
+display:none;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+font-size: medium;
+}
+
+/* active overlay */
+.overlay-box.active{
+display:flex;
+}
+
+/* overlay buttons */
+.overlay-btn{
+margin-top:15px;
+padding:10px 30px;
+border:none;
+border-radius:20px;
+background:#00bfc2;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+/* video */
+.shuffle-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:24px;
+display:none;
+pointer-events:none;
+}
+
+/* hide buttons */
+.hide-radios input{
+opacity:0;
+}

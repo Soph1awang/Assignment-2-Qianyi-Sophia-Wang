@@ -14,6 +14,7 @@ const closeBtn = document.querySelector(".close-btn")
 const video = document.getElementById("shuffleVideo")
 const list = document.querySelector(".todo-list")
 
+// Conditional guessing
 let guessing = false
 
 // Open instruction overlay
@@ -62,7 +63,6 @@ overlay.style.display = "flex";
 if(index === 2){
 correctBox.classList.add("active");
 radio.checked = true;
-radio.closest("li").style.opacity = "0.5";
 }else{
 wrongBox.classList.add("active");
 }

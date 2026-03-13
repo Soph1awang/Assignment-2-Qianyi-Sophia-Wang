@@ -80,7 +80,6 @@ overlay.style.display = "none";
 // restart video
 list.classList.add("hide-radios");
 video.style.display = "block";
-video.currentTime = 0;
 video.play();
 });
 
